@@ -20,22 +20,23 @@ Due to the 9th graders at Thomas High School having corrupt grades, which we the
 The data involved 39170 students, after we took out the Thomas High School 9th graders, we are left with 38709 students. The district summary was not largely affected after the changes we made to the dataset.  The images below show no more than a .3 different in scoring between the old data and the reconstructed data.   
 ![original_district_summary](https://user-images.githubusercontent.com/96501958/151726733-c57f5469-766a-4997-98a5-9b7853bf81a5.png)  Figure 1. original district summary results  
 ![new_district_summary](https://user-images.githubusercontent.com/96501958/151726734-0102760f-0229-4909-ba8b-42082cdf47b4.png)  Figure 2. updated district summary results  
-The school summary was also affected little, but these changes are easier to see as you go through the dataset. Thomas High School originally had an overall passing percentage of 90.95, when the data is first adjusted it becomes 64.85 when including the NaN scores. Thomas High School's performance is affected again by taking the 9th graders out of the dataset, resulting in an overall passing percentage of 90.63. Below shows the school summary before and after adjusting the dataset, respectfully.  
+The school summary was also affected little, but these changes are easier to see as you go through the dataset. Thomas High School originally had an overall passing percentage of 90.95, when the data is first adjusted it becomes 64.85 when including the NaN scores. Thomas High School's performance is affected again by taking the 9th graders out of the dataset, resulting in an overall passing percentage of 90.63. Below shows the school summary before, during, and after adjusting the dataset to exclude the freshman, respectfully.  
 ![old_school_summary](https://user-images.githubusercontent.com/96501958/151728422-cbd4dcab-b09d-4d75-83de-b50f7582e254.png)  
 ![new_school_summary](https://user-images.githubusercontent.com/96501958/151728424-5d9a0db7-6b5f-411e-800c-b9538aee144d.png)  
+![new_school_summary_upperclassmen](https://user-images.githubusercontent.com/96501958/151728884-0ea9e6a9-5a65-4a26-adc5-ce7cc53db1af.png)  
 
-* affects math and reading scores by grade little, the new data shows passing math % is 74.76, passing reading score is 85.66%, and passing both math and reading is 25105 students. The original ninth grade math scores for THS were 83.59, reading were 83.73. The original passing math % is 74.98, passing reading % is 85.81, both math and reading students is 25528. There is roughly a .2% difference in passing percentages when the 9th graders are removed from the data versus when the original grades are in the data.  
-* affects scores by school spending: old Data: spending ranges oer  
+Removing 9th graders from the data affects math and reading scores by grade little. The new data shows passing math % is 74.76, passing reading score is 85.66%, and passing both math and reading is 25105 students. The original ninth grade math scores for THS were 83.59, reading were 83.73. The original passing math % is 74.98, passing reading % is 85.81, both math and reading students is 25528. There is roughly a .2% difference in passing percentages when the 9th graders are removed from the data versus when the original grades are in the data.  
+The school spending was not significantly affected either. The images below show the results for school spending for the original data as well as the new data 
 ![old_school_spending](https://user-images.githubusercontent.com/96501958/151726760-ece701b5-0bcf-4dcf-938f-0c6c50f6b4ca.png)  
 ![new_school_spending](https://user-images.githubusercontent.com/96501958/151726808-049f3c3c-3190-4a20-8775-1299ee3a1ca7.png)  
 
-* affects scores by school size no significant effect  
+The removal of 9th graders from Thomas High School in the dataset has no significant effect on scores by school size or scores by school type, shown below. 
 ![old_School_size](https://user-images.githubusercontent.com/96501958/151726650-650d62dd-cd0f-4f27-be77-7623e6bc9f81.png)  
-![new_school_size](https://user-images.githubusercontent.com/96501958/151726680-8ba165ab-ff58-41ff-aab3-24293338881f.png)  
+Figure 3. original school size data  
+![new_school_size](https://user-images.githubusercontent.com/96501958/151726680-8ba165ab-ff58-41ff-aab3-24293338881f.png)  Figure 4. school size data with the removal of THS 9th graders  
 
-* affects scores by school type no significant effect  
-![old_school_type](https://user-images.githubusercontent.com/96501958/151726706-e50554a2-7ebe-4159-ab88-1b699bd67033.png)  
-![new_school_type](https://user-images.githubusercontent.com/96501958/151726716-ec270c91-fcf4-4952-9755-d6e444a24480.png)  
+![old_school_type](https://user-images.githubusercontent.com/96501958/151726706-e50554a2-7ebe-4159-ab88-1b699bd67033.png)  Figure 5. original dataset showing school type analysis  
+![new_school_type](https://user-images.githubusercontent.com/96501958/151726716-ec270c91-fcf4-4952-9755-d6e444a24480.png)  Figure 6. school type results of the new dataset  
 
 ## Summary  
 4 changes to the school district analysis after reading and math scores have been replaced: average reading score, percent passing math, percent passing reading, percent overall passing. 
