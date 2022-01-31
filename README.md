@@ -1,7 +1,7 @@
 # School District Analysis
 ## Overview  
 With Maria's help, we conducted a School District Analysis for the school board. The school board has made us aware that some grades in the students_complete.csv file we have been working with are inaccurate. The Thomas High School ninth grader scores for math and reading had been altered. We needed to go into the data and replace these score with NaN so that the school board can still use the data for accurate state-testing infomration. We replaced the data according to the school boards wishes and then repeated the analysis with the new data.  
-## Results  
+## Analysis 
 ### Replacing the reading and math scores  
 In order for the school board to be able to use this data we had to adjust the data to no longer include math and reading scores from 9th graders at Thomas High School. We used the loc method on the student_data_df (our student data stored in a Pandas dataframe) to select all the reading and math scores from the 9th grade at Thomas High School and replace them with NaN.  
 ### Repeating the School District Analysis  
@@ -15,6 +15,29 @@ We then calculated the passing percentages of our new dataset, the results were 
 ### School Summary  
 We got the number of 10th-12th graders at Thomas High School using the loc method and created a value that combines the numbers of 10th, 11th, and 12th graders. We then calculated all the students at Thomas High School who passed math, reading, and both math and reading. We also calculated the percentage of students from grades 10th-12th at Thomas High School who passed math, and those who passed reading, as well as, the overall passing percentage.  
 ![upperclassman_percentages](https://user-images.githubusercontent.com/96501958/151723928-19e8fa86-a5f7-41df-9bec-70cf15b0892b.png)  
-Due to the 9th graders at Thomas High School having corrupt grades, which we then replaced with NaN, we need to replace the reading, math, and overall percentages in the school summary with the new values we got omitting 9th graders.  We then filled out the rest of our data sheet with the original code used to determine high and low performing schools, math and reading scores by grade, scores by school spending, scores by school size, and scores by school type. 
+Due to the 9th graders at Thomas High School having corrupt grades, which we then replaced with NaN, we need to replace the reading, math, and overall percentages in the school summary with the new values we got omitting 9th graders.  We then filled out the rest of our data sheet with the original code used to determine high and low performing schools, math and reading scores by grade, scores by school spending, scores by school size, and scores by school type.  
+## Results  
+The data involved 39170 students, after we took out the Thomas High School 9th graders, we are left with 38709 students. The district summary was not largely affected after the changes we made to the dataset.  
+![original_district_summary](https://user-images.githubusercontent.com/96501958/151726733-c57f5469-766a-4997-98a5-9b7853bf81a5.png)  
+![new_district_summary](https://user-images.githubusercontent.com/96501958/151726734-0102760f-0229-4909-ba8b-42082cdf47b4.png)  
+The school summary was affected: Thomas high old overall passing oercentage = 90.95, new data is 65.1 when including the NaN scores, once the 9th graders were removed from the dataset, the percentage was at 90.6 
+THS's performance is affected by replacing the 9th graders math and reading scores by
+* affects math and reading scores by grade little: New data: passing math % is 74.76, passing readin score is 85.66%, and passing both math and reading is 25105. 
+old data: ninth grade math scores for THS were 83.59, reading were 83.73. 
+Old data: passing math % is 74.98, passing reading % is 85.81, both math and reading students is 25528. 
+* affects scores by school spending: old Data: spending ranges oer  
+![old_school_spending](https://user-images.githubusercontent.com/96501958/151726760-ece701b5-0bcf-4dcf-938f-0c6c50f6b4ca.png)  
+![new_school_spending](https://user-images.githubusercontent.com/96501958/151726808-049f3c3c-3190-4a20-8775-1299ee3a1ca7.png)  
+
+* affects scores by school size no significant effect  
+![old_School_size](https://user-images.githubusercontent.com/96501958/151726650-650d62dd-cd0f-4f27-be77-7623e6bc9f81.png)  
+![new_school_size](https://user-images.githubusercontent.com/96501958/151726680-8ba165ab-ff58-41ff-aab3-24293338881f.png)  
+
+* affects scores by school type no significant effect  
+![old_school_type](https://user-images.githubusercontent.com/96501958/151726706-e50554a2-7ebe-4159-ab88-1b699bd67033.png)  
+![new_school_type](https://user-images.githubusercontent.com/96501958/151726716-ec270c91-fcf4-4952-9755-d6e444a24480.png)  
+
 ## Summary  
-4 changes to the school district analysis after reading and math scores have been replaced
+4 changes to the school district analysis after reading and math scores have been replaced: average reading score, percent passing math, percent passing reading, percent overall passing. 
+
+larger schools do not necessarily perform as well as smaller ones. small and medium reach 90% overall passing while large ones stay under 60%. charter schools preform better than district schools. 
